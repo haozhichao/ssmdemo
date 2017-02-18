@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS ssmdemo_db DEFAULT CHARSET utf8 COLLATE utf8_general_ci;
+
+DROP TABLE IF EXISTS t_user;
+-- ----------------------------
+--  用户表
+-- ----------------------------
+CREATE TABLE t_user (
+  USER_ID INT NOT NULL AUTO_INCREMENT,
+  USER_NAME VARCHAR(200) NOT NULL COMMENT '用户名',
+  PASSWORD VARCHAR(200) NOT NULL COMMENT '密码',
+  PRIMARY KEY (USER_ID)
+) ENGINE=InnoDB;
