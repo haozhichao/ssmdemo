@@ -20,4 +20,8 @@ public class UserService {
         return userDao.getByConditions(null);
     }
 
+    public Integer addUser(User user) {
+        return userDao.insert(user);
+    }
+
 }
